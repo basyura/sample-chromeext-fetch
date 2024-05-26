@@ -12,5 +12,6 @@ chrome.runtime.onMessage.addListener((message, _sender, sendResponse) => {
       sendResponse({ data });
     });
 
+  // ここで true を返さないと応答を content_scripts で取得できない
   return true;
 });
