@@ -6,7 +6,17 @@
   "permissions": ["activeTab", "scripting"],
   "action": {
     "default_popup": "popup.html"
-  }
+  },
+  "content_scripts": [
+    {
+      "matches":[
+        "http://basyura.org/"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ]
 }
 
 
